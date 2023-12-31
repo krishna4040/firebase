@@ -1,10 +1,11 @@
 import React, { useState } from 'react'
 import { useDispatch } from 'react-redux'
 import { auth } from '../config/firebase'
-import { updateProfile, updateEmail, sendEmailVerification, updatePassword, sendPasswordResetEmail, reauthenticateWithCredential, deleteUser } from 'firebase/auth'
-import { updateDisplayNameLocal, updatePhotoURLLocal, updateEmailLocal, updatePasswordLocal, updateEmailVerified } from '../context/hooks/user'
+import { updateProfile, updateEmail, sendEmailVerification, updatePassword, sendPasswordResetEmail, deleteUser } from 'firebase/auth'
+import { updateDisplayNameLocal, updatePhotoURLLocal, updateEmailLocal, updatePasswordLocal, updateEmailVerified } from '../store/slice/user'
 
 const Settings = () => {
+
     const dispacth = useDispatch();
     const [displayName, setDisplayName] = useState("");
     const [email, setEmail] = useState('');
@@ -39,11 +40,6 @@ const Settings = () => {
         } catch (error) {
             console.log(error);
         }
-    }
-
-    const logoutHandler = async () => {
-        reauthenticateWithCredential(auth.currentUser, Credential);
-        console.log("trying to log out");
     }
 
     const deleteHandler = async () => {
