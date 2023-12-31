@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* @layer components {
+    .fcs {
+        @apply flex flex-col items-start justify-center
+    }
+
+    .frs {
+        @apply flex flex-row items-center justify-start
+    }
+} */
