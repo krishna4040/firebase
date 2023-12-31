@@ -8,7 +8,7 @@ import { useNavigate } from 'react-router-dom'
 
 // Signup && Signin
 
-const Sign = () => {
+const PasswordAuthentication = () => {
 
     const dispacth = useDispatch();
     const navigation = useNavigate();
@@ -75,4 +75,4 @@ const Sign = () => {
     )
 }
 
-export default Sign
+export default PasswordAuthentication

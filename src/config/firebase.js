@@ -8,6 +8,11 @@ const firebaseConfig = {
     measurementId: "G-WY9H5LPV4K"
 };
 
+export const actionCodeSettings = {
+    url: 'http://localhost:5173',
+    handleCodeInApp: true
+};
+
 import { initializeApp } from 'firebase/app'
 import { getAuth } from 'firebase/auth'
 
