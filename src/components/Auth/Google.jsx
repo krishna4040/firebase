@@ -5,7 +5,7 @@ import { useDispatch } from 'react-redux'
 import { auth } from '../../config/firebase'
 import { useNavigate } from 'react-router-dom'
 
-// FaceBookAuthProvider, OAuthProvider(apple,microsoft,yaaho), TwitterAuthProvider, GithubAuthProvider, 
+// FaceBookAuthProvider, OAuthProvider(apple,microsoft,yaaho), TwitterAuthProvider, GithubAuthProvider, SAMLAuthProvider
 
 const Google = () => {
 
